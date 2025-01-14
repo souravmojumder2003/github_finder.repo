@@ -13,9 +13,10 @@
         <input type="submit" name='button' value='Get GitHub Info'>
     </form>
     {% if user %}
-  <p> Username: {{user.login}} </p>
+ <p> Username: {{user.login}} </p>
   <p> URL: {{user.html_url}}</p>
   <p> Repos: {{user.public_repos}}</p>
+  <p>  <img src="{{user.avatar_url}}"  width="80" height="80"  /></p>
     {% endif %}
 </body>
 </html>
